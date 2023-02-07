@@ -1,0 +1,38 @@
+#header-nav {
+    height: auto;
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+}
+
+#header-left-nav {
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        margin-left: 10px;
+
+    }
+}
+
+
+#header-right-nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav-list {
+    li {
+        list-style: none;
+        display: inline-block;
+
+        a {
+        margin-right: 20px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        
+        
+    }
+}
+}

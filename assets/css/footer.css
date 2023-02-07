@@ -1,0 +1,22 @@
+#footer-nav {
+  height: auto;
+  display: flex;
+  background-color: #514f4f; }
+
+#footer-left-nav h1 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px; }
+
+#footer-right-nav {
+  display: flex;
+  align-items: center; }
+
+#footer-nav-list li {
+  list-style: none; }
+  #footer-nav-list li a {
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none; }
