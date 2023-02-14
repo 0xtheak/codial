@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb://useradmin:I'mth3@k1@27.0.0.1:27017/codial_development");
+mongoose.connect("mongodb://127.0.0.1:27017/codial_development");
 
 const db = mongoose.connection;
 
