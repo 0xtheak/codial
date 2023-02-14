@@ -16,7 +16,6 @@ module.exports.toggleLike = async function(req, res){
         }else {
             likeable = await Comment.findById(req.query.id).populate('likes');
         }
-        console.log(likeable);
 
         // check if already like exits
         let existingLike = await Like.findOne({

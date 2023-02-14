@@ -4,6 +4,7 @@ const commentsMailer = require('../mailers/comments_mailer');
 const commentEmailWorker = require('../workers/comment_email_worker');
 const queue = require('../config/kue');
 const Like = require('../models/like');
+const Friendship = require('../models/friendship');
 
 module.exports.comment =  async function(req, res){
 
@@ -29,8 +30,6 @@ module.exports.comment =  async function(req, res){
             
 
             if(req.xhr){
-                
-
                 return res.status(200).json({
                     data : {
                         comment : comment
@@ -47,9 +46,7 @@ module.exports.comment =  async function(req, res){
         console.log(err);
         req.flash('error', err);
         return res.redirect('back');
-    }
-
-    
+    }  
   
 }
 
